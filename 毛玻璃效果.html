@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tiger</title>
+    <style>
+        body,main::before{
+            background-image:linear-gradient(#58a 60%,yellowgreen 40%);
+        }
+        main{
+            box-shadow:0 0 0 50vmax rgba(0,0,0,.8);
+            position:relative;
+            border-radius:.5em;
+            font-family:"新宋体";
+            width:700px;
+            height:170px;
+            padding:1.3em 1em;
+            margin:100px auto;
+            background:hsla(0,0%,100%,.2);
+            overflow:hidden;
+        }
+        main:before{
+            content:'';
+            z-index:-1;
+            position:absolute;
+            top:0; right:0; bottom:0; left:0;
+            filter:blur(20px);
+        }
+        blockquote{
+            line-height:1.5em;
+        }
+        cite{
+            font-variant-ligatures:common-ligatures;
+            line-height:3em;
+            font-weight:700;
+            text-decoration:none;
+            border-bottom:1px solid red;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <blockquote>
+        2016年，无人机迎来爆发年。在未来的几年，全球民用无人机市场将开启第二次腾飞，进入2.0时代。
+        在民用无人机领域，中国企业掌握着全球领先的技术和产品，占有近七成的全球市场份额，走在世界前列。
+        12月15日14时，GOOD TECH系列直播将带您体验全球顶尖的无人机，揭秘让”中国创造”风靡全球的科技公司。
+        欢迎大家到直播间和@升级中国 微博参与互动，踊跃提问。
+        <footer>----
+            <cite>
+                升级中国，
+                直播间：揭秘让中国创造风靡全球的公司
+            </cite>
+        </footer>
+    </blockquote>
+</main>
+</body>
+</html>

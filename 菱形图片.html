@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .image{
+            width:400px;
+            margin:200px auto;
+            transform:rotate(60deg);
+            overflow:hidden;
+        }
+        .image>img{
+            width:400px;
+            /*transform:rotate(-45deg) scale(1.42);*/
+            clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);
+            transition:1s clip-path;
+        }
+        img:hover{
+            clip-path:polygon(0 0,100% 0,100% 100%,0 100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="image">
+        <img src="image/7930.jpg" alt="">
+    </div>
+</body>
+</html>
